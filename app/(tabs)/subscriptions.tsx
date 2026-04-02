@@ -1,12 +1,15 @@
-import React from "react";
+import { Link, useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
 
-const Subscriptions = () => {
+const SubscriptionDetails = () => {
+  const { id } = useLocalSearchParams<{ id: string }>();
+
   return (
     <View>
-      <Text>subscriptions</Text>
+      <Text>Subscription Details: {id}</Text>
+      <Link href="/">Go back</Link>
     </View>
   );
 };
 
-export default Subscriptions;
+export default SubscriptionDetails;

@@ -8,5 +8,4 @@ const Insights = () => {
     </View>
   );
 };
-
 export default Insights;
